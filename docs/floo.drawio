@@ -1,0 +1,83 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="0IfNibFEDO7NIIrtW1Y2">
+    <mxGraphModel dx="1370" dy="872" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uNyQSjDF0StS8CT_rMns-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="350" width="540" x="150" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="250" width="300" x="290" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-3" edge="1" parent="1" source="uNyQSjDF0StS8CT_rMns-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uNyQSjDF0StS8CT_rMns-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Client" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-5" edge="1" parent="1" source="uNyQSjDF0StS8CT_rMns-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uNyQSjDF0StS8CT_rMns-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Public IP / Open port" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-28" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="432" y="380" as="sourcePoint" />
+            <mxPoint x="432" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-4" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Tunnel server" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-9" edge="1" parent="1" source="uNyQSjDF0StS8CT_rMns-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uNyQSjDF0StS8CT_rMns-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-13" edge="1" parent="1" source="uNyQSjDF0StS8CT_rMns-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="uNyQSjDF0StS8CT_rMns-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-30" edge="1" parent="1" source="uNyQSjDF0StS8CT_rMns-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uNyQSjDF0StS8CT_rMns-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="580" />
+              <mxPoint x="620" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-31" connectable="0" parent="uNyQSjDF0StS8CT_rMns-30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Persistent connection" vertex="1">
+          <mxGeometry relative="1" x="0.1346" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-6" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Tunnel agent" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-8" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="localhost:xxxx" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-12" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="localhost:xxxx" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-24" parent="1" style="html=1;shape=mxgraph.infographic.ribbonSimple;notch1=0;notch2=20;align=center;verticalAlign=middle;fontSize=14;fontStyle=0;whiteSpace=wrap;" value="VPS" vertex="1">
+          <mxGeometry height="30" width="60" x="290" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-26" parent="1" style="html=1;shape=mxgraph.infographic.ribbonSimple;notch1=0;notch2=20;align=center;verticalAlign=middle;fontSize=14;fontStyle=0;whiteSpace=wrap;" value="Local machine behind NAT / firewall" vertex="1">
+          <mxGeometry height="40" width="220" x="150" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="uNyQSjDF0StS8CT_rMns-29" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="407" y="380" as="sourcePoint" />
+            <mxPoint x="407" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
