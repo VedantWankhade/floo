@@ -5,22 +5,18 @@ import (
 	"log"
 	"net"
 	"os"
+	"sync"
 )
 
 func main() {
-	agentSrv, err := net.Listen("tcp", ":8080")
+	agent, err := net.Dial("tcp", ":8090")
 	if err != nil {
-		log.Fatalf("error starting agent: %w", err)
+		log.Fatal(err)
 	}
-
-	log.Println("Agent started listening on :8080")
-
-	for {
-		conn, err := agentSrv.Accept()
-		if err != nil {
-			log.Printf("error reqceing request: %w", err)
-			continue
-		}
-		io.Copy(os.Stdout, conn)
-	}
+	log.Println("Agent connected to server")
+	agent.Write([]byte("register"))
+	var wg sync.WaitGroup
+	wg.Add(1)
+	io.Copy(os.Stdout, agent)
+	wg.Wait()
 }

@@ -12,6 +12,8 @@
     in
     {
       devShells.${system}.default = pkgs.mkShell {
+        hardeningDisable = [ "fortify" ];
+
         packages = with pkgs; [
             go_1_26
             golangci-lint
