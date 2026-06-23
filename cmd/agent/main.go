@@ -3,20 +3,25 @@ package main
 import (
 	"io"
 	"log"
-	"net"
+	"net/http"
 	"os"
-	"sync"
 )
 
 func main() {
-	agent, err := net.Dial("tcp", ":8090")
+	// agent, err := net.Dial("tcp", ":8090")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	// log.Println("Agent connected to server")
+	// agent.Write([]byte("register"))
+	// var wg sync.WaitGroup
+	// wg.Add(1)
+	// io.Copy(os.Stdout, agent)
+	// wg.Wait()
+
+	agent, err := http.Get("http://localhost:8090/agent/register")
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Println("Agent connected to server")
-	agent.Write([]byte("register"))
-	var wg sync.WaitGroup
-	wg.Add(1)
-	io.Copy(os.Stdout, agent)
-	wg.Wait()
+	io.Copy(os.Stdout, agent.Body)
 }
